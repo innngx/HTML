@@ -1,0 +1,61 @@
+body {
+  background-color: white;
+}
+
+h1 {
+  color: rgb(34, 19, 113);
+  font-family: fantasy;
+  font-size: 110%
+}
+
+h2 {
+  color: blue;
+  font-family: courier;
+  font-size: 110%;
+}
+
+h3 {
+  border: 1px solid gray;
+  padding: 10px;
+  margin: 30px;
+}
+h3#h01 {
+  color: red;
+  border: 0px;
+  padding: auto;
+  margin: auto;
+}
+h3.class {
+  color: yellow;
+  border: 0px;
+  padding: auto;
+  margin: auto;
+}
+
+p {
+  color: black;
+}
+
+a:link {
+  color: lightgreen;
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+}
+
+a:hover {
+  color: green;
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(34, 19, 113);
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: none;
+}
+
+a:active {
+  color: red;
+  background-color: rgba(255, 255, 255, 0);
+  text-decoration: underline;
+}

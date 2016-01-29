@@ -3,9 +3,9 @@
 <head>
   <title>Welcome to HTML</title>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body style="background-color:white;">  <!--multi body style not working-->
-
+<body>  <!--will overwrite style; multi body style not working-->
 <h1>Leaning HTML -
   <a href="http://www.w3schools.com/html/html_css.asp">
     <b>click here</b>
@@ -27,6 +27,17 @@
 </p>
 
 <hr> <!--hr=Horizontal Rules-->
+<!-- CSS -->
+<h2>This is the heading2</h2>
+<h3>This is the heading</h3>
+<h3>This is the heading</h3>
+<h3 id="h01">This heading is different using id in style</h3>
+<h3 class="class">Class different in style</h3>
+<h3 id="h01">id can use as class? no different?</h3>
+<!-- Use id to address a single element.
+Use class to address groups of elements. -->
+
+<hr>
 <!-- colors Name RGB HEX (FF=255)-->
 red     rgb(255,0,0)      #FF0000
 yellow  rgb(255,255,0)    #FFFF00
@@ -182,7 +193,6 @@ It usually displayed in a fixed-width font (Usually Courier) And cannot change l
 <img src="http://www.w3schools.com/html/w3schools.jpg"
   alt="W3Schools.com" width="104 height="142">
 without p, text will display in the end and <strong>is not right</strong>
-
 </body>
 </html>
 
