@@ -1,3 +1,59 @@
+span.note {
+  font-size: 120%;
+  color: red;
+}
+.cities {  /*class cities, not limited in div*/
+  background-color: black;
+  color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+ul#menu {
+  padding: 0; /*starting point 0*/
+}
+ul#menu li {
+  display:inline; /*Horizontal List*/
+}
+ul#menu li a {
+  background-color: black;
+  color: white;
+  padding: 10px 20px; /*updown10px leftright20px*/
+  text-decoration: none;
+  border-radius: 8px 0 4px 0; /*round ul ur dr dl*/
+}
+ul#menu li a:hover {
+  background-color: orange;
+}
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table {
+  border-spacing: 2%;
+}
+th, td {
+  padding: 3%;
+}
+th {
+  text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+    background-color: #fff;
+}
+table#t01 th {
+    color: white;
+    background-color: black;
+}
+
+img {
+  width: 100%;
+}
+
 body {
   background-color: white;
 }
@@ -7,13 +63,11 @@ h1 {
   font-family: fantasy;
   font-size: 110%
 }
-
 h2 {
   color: blue;
   font-family: courier;
   font-size: 110%;
 }
-
 h3 {
   border: 1px solid gray;
   padding: 10px;
@@ -32,28 +86,21 @@ h3.class {
   margin: auto;
 }
 
-p {
-  color: black;
-}
-
 a:link {
   color: lightgreen;
   background-color: rgba(255, 255, 255, 0);
   text-decoration: none;
 }
-
 a:hover {
   color: green;
   background-color: rgba(255, 255, 255, 0);
   text-decoration: underline;
 }
-
 a:visited {
   color: rgb(34, 19, 113);
   background-color: rgba(255, 255, 255, 0);
   text-decoration: none;
 }
-
 a:active {
   color: red;
   background-color: rgba(255, 255, 255, 0);
