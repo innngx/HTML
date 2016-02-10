@@ -3,11 +3,13 @@
 <head>
   <title>Welcome to HTML</title>
   <meta charset="UTF-8">
+  <!-- following line ensure good looks for all devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>  <!--will overwrite style; multi body style not working-->
 <h1>Leaning HTML -
-  <a href="http://www.w3schools.com/html/html_layout.asp" target="_blank">
+  <a href="http://www.w3schools.com/html/html_iframe.asp" target="_blank">
     <img src="http://www.w3schools.com/html/smiley.gif"
       alt="W3HTML" style="width:20px;height:20px;border:0;">
   </a>
@@ -32,9 +34,47 @@
   <li><a href="http://www.w3schools.com/css/default.asp">CSS</a></li>
   <li><a href="http://www.w3schools.com/js/default.asp">JavaScript</a></li>
   <li><a href="http://www.w3schools.com/php/default.asp">PHP</a></li>
+  <li><a href="http://www.w3schools.com/w3css/default.asp">W3.CSS</a></li>
 </ul>
 
 <hr> <!--hr=Horizontal Rules-->
+<!-- HTML5 layout -->
+<header>
+  <h1>City Gallery</h1>
+</header>
+<nav>
+  London<br>
+  Paris<br>
+  Tokyo
+</nav>
+<section>
+  <h1>London</h1>
+  <p>London is the capital city of England. It is the most populous city in the United Kingdom,
+  with a metropolitan area of over 13 million inhabitants.</p>
+  <p>Standing on the River Thames, London has been a major settlement for two millennia,
+  its history going back to its founding by the Romans, who named it Londinium.</p>
+</section>
+<footer>
+  HTML5 footer Layout
+</footer>
+<hr>
+<div id="footer">
+  div footer Layout
+</div>
+<hr>
+<table class="lamp">
+  <tr>
+    <th>
+      <img src="http://www.w3schools.com/images/lamp.jpg"
+        alt="Note" style="width:32px;height:32px;"/>
+    </th>
+    <td>
+      The table element was not designed to be a layout tool.
+    </td>
+  </tr>
+</table>
+
+<hr>
 <!-- div span-->
 <h1>My <span class="note">Inline</span> Format</h1>
 <div class="cities">

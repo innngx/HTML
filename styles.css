@@ -1,3 +1,47 @@
+table.lamp {
+    width: 100%;
+    border: 1px solid #d4d4d4;
+}
+table.lamp th, td {
+  padding: 10px;
+}
+table.lamp th {
+  width: 40px;
+}
+header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:300px;
+    width:100px;
+    float:left;
+    padding:5px;
+}
+section {
+    width:350px;
+    float:left;
+    padding:10px;
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;
+}
+
 span.note {
   font-size: 120%;
   color: red;
@@ -58,11 +102,6 @@ body {
   background-color: white;
 }
 
-h1 {
-  color: rgb(34, 19, 113);
-  font-family: fantasy;
-  font-size: 110%
-}
 h2 {
   color: blue;
   font-family: courier;
