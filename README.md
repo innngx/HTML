@@ -1,5 +1,5 @@
 # innngx.github.io
-### <a href=http://github.xgao.us>http://gitHub.xgao.us</a>
+### <a href=http://github.xgao.us>http://github.xgao.us</a>
 
 * adding <a href="http://github.xgao.us/p/GENDER.html">Gender.html</a>
 
