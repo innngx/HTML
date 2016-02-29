@@ -6,12 +6,14 @@
   <!-- following line ensure good looks for all devices -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <!-- base element to set base URL and base target for all-->
+  <!-- <base href="http://www.w3schools.com/images/" target="_blank" /> -->
 </head>
 <body>  <!--will overwrite style; multi body style not working-->
 <h1>Leaning HTML -
-  <a href="http://www.w3schools.com/html/html_iframe.asp" target="_blank">
+  <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">
     <img src="http://www.w3schools.com/html/smiley.gif"
-      alt="W3HTML" style="width:20px;height:20px;border:0;">
+      alt="W3HTML" style="width:20px;height:20px;border:0;" />
   </a>
 </h1>
 <h2 >
@@ -38,6 +40,68 @@
 </ul>
 
 <hr> <!--hr=Horizontal Rules-->
+<!-- URL Encoding -->
+<form name="input" action="http://www.w3schools.com/html/demo_form_submit.asp"
+  target="_blank" method="get">
+  <input type="text" name="text" value="Try It Yourself ®" size="30">
+  <input type="submit" value="Submit">
+</form>
+
+<hr>
+<!-- HTML Symbols -->
+<p>&spades; &nbsp; &clubs;</p>
+<p style="color:red;">&hearts; &nbsp; &diams;</p>
+<a href="http://www.w3schools.com/html/html_symbols.asp" target="_blank">
+  HTML Symbols
+</a>
+
+<hr>
+<!-- iframe JS-->
+<iframe src="/p/TEST.md" width="100%" height="20"
+  style="border:1px dotted">
+</iframe>
+
+<noscript>
+  The content inside the &lt; noscript &gt; element will only be displayed
+  if scripts are not supported, or are disabled in the user's browser
+</noscript>
+<p id="jsdemo"></p>
+<script>
+  document.getElementById("jsdemo").innerHTML = "Hello JavaScript!";
+</script>
+
+<button type="button" onclick="jsfun()">Click jsfun</button>
+<script>
+  function jsfun() {
+    document.getElementById("jsdemo").innerHTML =
+    "JavaScript can change the content of an HTML element.";
+    document.getElementById("jsdemo").style.fontSize =
+    "20px";
+  }
+</script>
+
+<script>
+  function light(sw) {
+    var pic;
+    if (sw == 0) {
+      pic = "http://www.w3schools.com/html/pic_bulboff.gif"
+    } else {
+      pic = "http://www.w3schools.com/html/pic_bulbon.gif"
+    }
+
+    document.getElementById('myImage').src = pic;
+  }
+</script>
+<br><br>
+<img id="myImage" src="http://www.w3schools.com/html/pic_bulboff.gif"
+  style="width:100px;height:180px;" alt="light" />
+
+<p>
+  <button type="button" onclick="light(1)">Light On</button>
+  <button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+<hr>
 <!-- HTML5 layout -->
 <header>
   <h1>City Gallery</h1>
@@ -66,7 +130,7 @@
   <tr>
     <th>
       <img src="http://www.w3schools.com/images/lamp.jpg"
-        alt="Note" style="width:32px;height:32px;"/>
+        alt="Note" style="width:32px;height:32px;" />
     </th>
     <td>
       The table element was not designed to be a layout tool.
@@ -159,7 +223,7 @@
   Click on the sun or one of the planets to watch it closer:
 </p>
 <img src="http://www.w3schools.com/html/planets.gif" alt="Planets"
-  usemap="#planetmap" style="width:145px;height:126px;">
+  usemap="#planetmap" style="width:145px;height:126px;" />
 <map name="planetmap">
   <area shape="rect" coords="0,0,82,126" alt="Sun" href="http://www.w3schools.com/html/sun.htm"/>
   <area shape="circle" coords="90,58,3" alt="Mercury" href="http://www.w3schools.com/html/mercur.htm" />
@@ -168,21 +232,21 @@
 <img src="w3schools.jpg"
   alt="alt text when img not shown;
         also used for screen reader"
-  style="width:100px;height:142px;">
+  style="width:100px;height:142px;" />
 <p>
   <strong>Float to left</strong>
 </p>
 <p>
   <img src="https://cache.nebula.phx3.secureserver.net/obj/MzFGODdCNjlCNDIzODk1MDk4OUQ6NWE0NjVhZWI2NTQyMWUwOTVhYTQ2ODFhYzdjMTNmY2Q=?u=39dca1d6-475a-4753-87f7-010d1b3b9423"
-    alt="doggy" style="float:left;width:200px;border:0;">
+    alt="doggy" style="float:left;width:200px;border:0;" />
   We suggest you use the style attribute.
   It prevents styles sheets from changing
   the original size of images:
 </p>
 <img src="http://www.w3schools.com/html/w3schools.jpg"
-alt="W3Schools.com" width="104" height="142">
+alt="W3Schools.com" width="104" height="142" />
 <img src="http://www.w3schools.com/html/w3schools.jpg"
-alt="W3Schools.com" style="width:104px;height:142px">
+alt="W3Schools.com" style="width:104px;height:142px" />
 without p, text will display in the end and <strong>is not right</strong>
 
 <hr>
@@ -248,7 +312,7 @@ white   rgb(255,255,255)  #FFFFFF
   was founded in 1948.
 </p>
 <img src="http://www.who.int/about/Logo-WHO.jpg"
-  alt="WHO Logo" style="width:400px;height:160px">
+  alt="WHO Logo" style="width:400px;height:160px" />
 <p>
   <cite>WHO Logo</cite> from WHO website.
 </p>
@@ -322,7 +386,7 @@ It usually displayed in a fixed-width font (Usually Courier) And cannot change l
 <p>
   My first paragraph. Head is <b>bold</b>, para is <b>not</b>
   <br> "< br >" can be used in para.
-  Only way to show is adding space one two sides < br >
+  Only way to show is adding space one two sides < br > or &lt;&nbsp;&nbsp;br&gt;
 </p>
 <p>
   Meta data means data <b>about</b> data.
