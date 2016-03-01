@@ -11,7 +11,7 @@
 </head>
 <body>  <!--will overwrite style; multi body style not working-->
 <h1>Leaning HTML -
-  <a href="http://www.w3schools.com/html/html_forms.asp" target="_blank">
+  <a href="http://www.w3schools.com/html/html_form_input_types.asp" target="_blank">
     <img src="http://www.w3schools.com/html/smiley.gif"
       alt="W3HTML" style="width:20px;height:20px;border:0;" />
   </a>
@@ -40,8 +40,69 @@
 </ul>
 
 <hr> <!--hr=Horizontal Rules-->
+<!-- form -->
+<form action="http://www.w3schools.com/html/action_page.php"
+  target="_blank" method="get" autocomplete="off">
+  <!--default is get: data shows in url. post not-->
+  <fieldset>
+    <legend>Personal information</legend>
+    First name:<br>
+    <input type="text" name="fname" value="Xiang"><br>
+    Last name:<br>
+    <input type="text" name="lname" value="Gao"><br>
+    <br>
+    Gender:<br>
+    <input type="radio" name="gender" value="male" checked>
+      Male<br>
+    <input type="radio" name="gender" value="female">
+      Female<br>
+    <input type="radio" name="gender" value="other">
+      Other<br>
+    <br>
+    Country:<br>
+    <select name="country">
+      <option value="CHN">China</option>
+      <option value="USA">United States</option>
+      <option value="S" selected>Selected</option>
+    </select><br>
+    <br>
+    Message:<br>
+    <textarea name="message" rows="8" cols="40">Message inside.</textarea><br>
+    <input list="browsers" name="browsers" value="browsers">
+    <datalist id="browsers">
+      <option value="Internet Explorer">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist><br>
+    <br>
+    Encryption: <keygen name="security"><br>
+    <br>
+    <input type="submit" value="Submit Button">
+  </fieldset>
+</form>
+
+<br>
+<button type="button" name="clickme" onclick="alert('Hello World!')">
+  Click Me
+</button><br>
+
+<br>
+<form action="http://www.w3schools.com/html/action_page.php"
+ oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <input type="submit">
+</form>
+
+<hr>
 <!-- URL Encoding -->
-<form name="input" action="http://www.w3schools.com/html/demo_form_submit.asp"
+<form action="http://www.w3schools.com/html/demo_form_submit.asp"
   target="_blank" method="get">
   <input type="text" name="text" value="Try It Yourself ®" size="30">
   <input type="submit" value="Submit">
