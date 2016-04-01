@@ -11,7 +11,7 @@
 </head>
 <body>  <!--will overwrite style; multi body style not working-->
 <h1>Leaning HTML -
-  <a href="http://www.w3schools.com/html/html_form_input_types.asp" target="_blank">
+  <a href="http://www.w3schools.com/css/default.asp" target="_blank">
     <img src="http://www.w3schools.com/html/smiley.gif"
       alt="W3HTML" style="width:20px;height:20px;border:0;" />
   </a>
@@ -47,9 +47,12 @@
   <fieldset>
     <legend>Personal information</legend>
     First name:<br>
-    <input type="text" name="fname" value="Xiang"><br>
+    <input type="text" name="fname" value="Xiang" readonly><br>
     Last name:<br>
-    <input type="text" name="lname" value="Gao"><br>
+    <input type="text" name="lname" value="Gao" size="2" disabled><br>
+    <br>
+    Birthday:<br>
+    <input type="date" name="bd"><br>
     <br>
     Gender:<br>
     <input type="radio" name="gender" value="male" checked>
@@ -67,7 +70,8 @@
     </select><br>
     <br>
     Message:<br>
-    <textarea name="message" rows="8" cols="40">Message inside.</textarea><br>
+    <textarea name="message" rows="8" cols="40" maxlength="27" autofocus>Message inside. Maxlength=</textarea><br>
+    <br>
     <input list="browsers" name="browsers" value="browsers">
     <datalist id="browsers">
       <option value="Internet Explorer">
@@ -77,9 +81,16 @@
       <option value="Safari">
     </datalist><br>
     <br>
+    <input type="checkbox" name="vehicle1" value="Bike"> I have a bike <br>
+    <input type="checkbox" name="vehicle2" value="Car"> I have a car <br>
+    <br>
     Encryption: <keygen name="security"><br>
     <br>
+    <input type="password" name="psw"><br>
+    <br>
     <input type="submit" value="Submit Button">
+    <input type="submit" formaction="http://www.w3schools.com/html/demo_admin.asp"
+    value="Submit as admin">
   </fieldset>
 </form>
 
